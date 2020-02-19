@@ -12,26 +12,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val resInput = mutableListOf(R.mipmap.ic_b1, R.mipmap.ic_b2, R.mipmap.ic_b3,
-                R.mipmap.ic_b4, R.mipmap.ic_b5, R.mipmap.ic_b6, R.mipmap.ic_b7)
+        val resInput = mutableListOf(
+                R.mipmap.ic_b1,
+                R.mipmap.ic_b2,
+                R.mipmap.ic_b3,
+                R.mipmap.ic_b4,
+                R.mipmap.ic_b5,
+                R.mipmap.ic_b6,
+                R.mipmap.ic_b7)
 
         val bitmapInput = resInput.mapNotNull {
             BitmapFactory.decodeResource(resources, it)
         }
 
-        val resInput2 = mutableListOf(R.mipmap.ic_a1, R.mipmap.ic_a2, R.mipmap.ic_a3)
+        cv.resList = resInput.toMutableList()
+        //or
+        //cv.resList = bitmapInput.toMutableList()
 
-        val errorInput = mutableListOf("1", "2", "3")
-
-
-        val custom = ContinuousPicAnimView(this)
-        custom.resList = bitmapInput.toMutableList()
-//        linear.addView(custom)
-        cv.resList = bitmapInput.toMutableList()
-
-        tv_hello.setOnClickListener {
-            cv.resList = resInput2
-        }
 
     }
 }

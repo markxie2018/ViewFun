@@ -9,15 +9,6 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/tv_hello"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:text="Hello World!"
-        android:textColor="@color/colorAccent"
-        android:textSize="30sp" />
-
     <play.easy.markxie.continuouspicanimview.ContinuousPicAnimView
         android:id="@+id/cv"
         android:layout_width="200dp"
