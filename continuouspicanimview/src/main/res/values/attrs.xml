@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="ContinuousPicAnimView">
+        <attr name="repeatMode" format="enum">
+            <enum name="restart" value="1" />
+            <enum name="reverse" value="2" />
+        </attr>
+        <attr name="repeatCount" format="integer" />
+        <attr name="duration" format="integer" />
+        <attr name="startDelay" format="integer" />
+
+    </declare-styleable>
+
+</resources>
